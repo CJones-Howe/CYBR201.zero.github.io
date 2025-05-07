@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zer.OS v1.01</title>
+	<link rel="stylesheet" href="index0.css">
+<style>
+body {
+	font-family: Cascadia Mono, monospace;
+	background-color: black;
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 2px white;
+}
+
+header {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	justify-content: center;
+	margin-left: 35px;
+}
+
+header1 {
+	background-color: black;
+	color: white;
+	padding: 10px;
+	font-size: 30px;
+	text-align: center;
+	justify-content: center;
+	margin-right: 10px;
+}
+
+.nav-links {
+	display: flex;
+	list-style: none;
+	justify-content: center;
+}
+
+.nav-links li {
+	padding: 10px;
+	margin: 15px;
+	margin-left: 20px;
+}
+
+.nav-links a {
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+.nav-links a:hover {
+	color: #FFBF00;
+	font-size: 25px;
+	text-shadow: 0 0 5px #FFBF00;
+}
+
+.text-box {
+	width: 66%;
+	padding: 10px;
+	margin: 10px 0;
+	border: 1px solid white;
+}
+
+.text-box.left-justified {
+	float: left;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.text-box::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.text-box.right-justified {
+	float: right;
+	text-align: left;
+	margin-right: 20px;
+}
+
+.text-box::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.clearfix {
+	clear: both;
+}
+
+.text-box.left-justified li {
+	margin-top: 15px;
+}
+
+.text-box.right-justified li {
+	margin-top: 15px;
+}
+
+.text-box.left-justified2 {
+	float: left;
+	text-align: left;
+	margin-left: 20px;
+}
+
+.text-box.left-justified2 li {
+	margin-top: 15px;
+}
+
+.text-box.left-justified2 a {
+    color: #00B8D4;
+    text-decoration: underline;
+}
+
+.text-box.left-justified2 a:hover {
+    color: #00FFFF;
+    text-shadow: 0 0 5px #00FFFF;
+}
+</style>
+</head>
+<body>
+<header1>
+Welcome to Zer.OS
+</header1>
+<header>
+	<nav class="topnav">
+	<ul class="nav-links">
+		<li><a href="zero_page.html">Home</a></li>
+		<li><a href="about_me.html">About Me</a></li>
+		<li><a href="easter_egg.html"><¤></a></li>
+		<li><a href="services.html">Services</a></li>
+		<li><a href="contact.html">Contact</a></li>
+	</ul>
+</header>
+</nav>
+
+<div class="text-box left-justified">
+	<h2>About Me</h2>
+	<p>
+		I am Zero. I am a native of the American Northeast, and I am currently a Cybersecurity student at University at Albany, SUNY.
+	</p>
+	<p>
+		I am a member of the Cyber Defense Organization (CDO), and an aspiring Cybersecurity profesional. For the sake of
+        providing content for this webpage, I have built it as if I were already a full-time worker in the industry.
+	</p>
+	<p>
+		When I'm not behind a computer, I enjoy the outdoors. I am currently reading Thoreau's "Walden" and am a big proponent of his philosophy of purposeful living.
+        Some of my favorite outdoor activities are shooting sports, bass fishing, and camping.
+	</p>
+</div>
+<div class="clearfix"></div>
+<div class="text-box right-justified">
+	<h2>My Skills</h2>
+	<ul>
+		<li>[Linux]</li>
+		<li>[Windows]</li>
+		<li>[Bash]</li>
+		<li>[Python]</li>
+		<li>[MySQL]</li>
+	</ul>
+</div>
+<div class="clearfix"></div>
+<div class="text-box left-justified2">
+	<h2>My Projects</h2>
+	<ul>
+		<li>
+			<a href="#">[The Flux Capacitor]</a> - [The key to time travel.]
+		</li>
+		<li>
+			<a href="#">["The Plagues"]</a> - [Malware suite themed off of the 10 plagues on Egypt from the book of Exodus.]
+		</li>
+		<li>
+			<a href="#">[Operation Dinglebop]</a> - [Classified top secret]
+		</li>
+	</ul>
+</div>
+</body>
+</html>
