@@ -1,6 +1,252 @@
-1. Online, I go by Zero. I typically put some sort of signature on everything I do.
-2. Pass.
-3. Transfer Sophomore, this is my 2nd UAlbany Semester.
-4. My major is Cyber Security
-5. I enjoy militaria, outdoor and shooting sports like fishing, hunting, etc. I am a Christian.
-6. I want to get my Undergraduate degree in Cyber and get a good paying job.
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Zer.OS v1.01</title>
+	<link rel="stylesheet" href="index0.css">
+<style>
+  body {
+    font-family: 'Cascadia Mono', monospace;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    animation: fadeIn 2s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.8);
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+
+header {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+    border-bottom: 2px solid #00FF00;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+}
+
+
+header h1 {
+    font-size: 2rem;
+    letter-spacing: 0.1rem;
+}
+
+
+.nav-links {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+.nav-links li {
+    margin: 0 1.5rem;
+}
+
+.nav-links a {
+    color: #00FF00;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+.text-box {
+    width: 60%;
+    margin: 2rem auto;
+    padding: 1.5rem;
+    border: 2px solid #00FF00;
+    border-radius: 0.5rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    text-align: left;
+    line-height: 1.5;
+    opacity: 0;
+    animation: fadeIn 1s ease forwards, slideIn 0.5s ease forwards;
+    animation-delay: 0.5s;
+    box-shadow: 0 0 10px rgba(0, 255, 0, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.text-box:hover {
+    transform: translateY(-5px) scale(1.02);
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.7);
+}
+
+
+@keyframes slideIn {
+    from { transform: translateX(-50px); }
+    to { transform: translateX(0); }
+}
+
+
+.text-box h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid #00FF00;
+    padding-bottom: 0.5rem;
+}
+
+
+.text-box ul {
+    list-style: none;
+    padding: 0;
+    margin-left: 1rem;
+}
+
+.text-box ul li {
+    margin-bottom: 0.75rem;
+    position: relative;
+    padding-left: 1.2rem;
+}
+
+.text-box ul li::before {
+    content: '>';
+    color: #00FF00;
+    position: absolute;
+    left: 0;
+}
+
+
+.text-box a {
+    color: #00FFFF;
+    text-decoration: none;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.text-box a:hover {
+    color: #FFF;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+}
+
+
+#loading-animation {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #00FF00;
+    font-size: 2rem;
+    font-family: monospace;
+    z-index: 1000;
+    white-space: pre;
+    animation: blinkCursor 1s steps(2) infinite;
+    text-shadow: 0 0 10px rgba(0, 255, 0, 0.8);
+}
+
+@keyframes blinkCursor {
+    from { border-right-color: transparent; }
+    to { border-right-color: #00FF00; }
+}
+</style>
+</head>
+<body onload="init()">
+<header>
+    <h1>Welcome to Zer.OS</h1>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="zero_page.html">Home</a></li>
+            <li><a href="about_me.html">About Me</a></li>
+            <li><a href="easter_egg.html"><¤></a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div id="loading-animation">
+Loading Zer.OS...<span style="border-right: 2px solid #00FF00;"></span>
+</div>
+
+<div class="text-box left-justified" style="display:none;" id="left-box">
+    <h2>Cyber Security Professional</h2>
+        <li>University At Albany CyberSecurity major.</li>
+        <li>Cyber Defense Organization Junior-Board member.</li>
+        <li>NCAE Competitor.</li>
+        <li>UBNETDEF Competitor.</li>
+        <li>Great Dane Defense Competition Black Team member.</li>
+</div>
+<div class="clearfix" style="display:none;"></div>
+<div class="text-box right-justified" style="display:none;" id="right-box">
+    <h2>Outdoor Sportsman</h2>
+        <li>Camping enthusiast</li>
+        <li>Bass fisherman.</li>
+        <li>Avid hiker.</li>
+        <li>Deer hunter.</li>
+        <li>National parks enthusiast.</li>
+</div>
+<div class="clearfix" style="display:none;"></div>
+<div class="text-box left-justified2" style="display:none;" id="left-box-2">
+    <h2>Videogamer</h2>
+        <li>Long-time Arma 3 player.</li>
+        <li>PC Gamer.</li>
+        <li>Military Simulation Enthusiast.</li>
+        <li>BONELAB VR record holder.</li>
+</div>
+
+<script>
+function init() {
+    const loadingAnimation = document.getElementById('loading-animation');
+    const leftBox = document.getElementById('left-box');
+    const rightBox = document.getElementById('right-box');
+    const leftBox2 = document.getElementById('left-box-2');
+    const clearfixs = document.querySelectorAll('.clearfix');
+    const header = document.querySelector('header');
+
+
+    let dots = '';
+    let counter = 0;
+    let symbolCounter = 0;
+    const loadingInterval = setInterval(() => {
+        dots = dots + '.';
+        if (dots.length > 3) {
+            dots = '';
+        }
+        const symbol = symbolCounter % 2 === 0 ? '<¤>' : '';
+        loadingAnimation.innerHTML = `Loading Zer.OS${dots} <span style="color: #00FFFF;">${symbol}</span><span style="border-right: 2px solid #00FF00;"></span>`;
+        counter++;
+        symbolCounter++;
+
+        if (counter > 8) {
+            clearInterval(loadingInterval);
+            loadingAnimation.style.display = 'none';
+            header.style.display = 'flex';
+            leftBox.style.display = 'block';
+            rightBox.style.display = 'block';
+            leftBox2.style.display = 'block';
+            clearfixs.forEach(element => {
+                element.style.display = 'block';
+            });
+             // Add event listeners for dynamic effects
+            addEventListenersToLinks();
+        }
+    }, 500);
+}
+
+
+function addEventListenersToLinks() {
+    const links = document.querySelectorAll('a');
+    links.forEach(link => {
+        link.addEventListener('mouseenter', (e) => {
+            e.target.style.color = '#FFF';
+            e.target.style.textShadow = '0 0 10px rgba(255, 255, 255, 0.8)';
+        });
+        link.addEventListener('mouseleave', (e) => {
+            e.target.style.color = '#00FF00';
+            e.target.style.textShadow = 'none';
+        });
+    });
+}
+</script>
+</body>
+</html>
